@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let arr = ['输入我是傻逼就很能关闭了哦!', '你快点输入啊!'];
+    let next = 0;
+    function _input() {
+        let txt = arr[next%arr.length];
+        next++;
+        let value = prompt(txt);
+        if(value != '我是傻逼') {
+            _input()
+        }
+
+    };
+
+    _input();
+
+</script>
